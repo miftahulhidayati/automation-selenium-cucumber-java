@@ -1,0 +1,230 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-23T06:42:53.499Z",
+        "line": 4,
+        "name": "I login with valid credential",
+        "description": "",
+        "id": "stockbit-login;i-login-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8072697600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to \"https://stockbit.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://stockbit.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDef.LoginStockbit.iNavigateTo(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221570300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"indlovu\" into input field having xpath \"//input[@id\u003d\u0027username\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"indlovu\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"//input[@id\u003d\u0027username\u0027]\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StepDef.LoginStockbit.iEnterIntoInputFieldHavingXpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98253700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter \"cantik\" into input field having id \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cantik\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDef.LoginStockbit.iEnterIntoInputFieldHavingId(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129551000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on element having id \"email-login-button\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email-login-button\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDef.LoginStockbit.iClickOnElementHavingId(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4547141600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I wait 30 seconds for element having class \"popavatar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 7
+                },
+                {
+                  "val": "\"popavatar\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDef.LoginStockbit.iWaitSecondsForElementHavingClass(int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-23T06:43:06.642Z",
+        "line": 11,
+        "name": "I try to logout",
+        "description": "",
+        "id": "stockbit-login;i-try-to-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": []
+      }
+    ],
+    "name": "Stockbit Login",
+    "description": "  As a user I should able to login into Stockbit",
+    "id": "stockbit-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginStockbit.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-23T06:43:06.652Z",
+        "line": 2,
+        "name": "I want to using feature search on google",
+        "description": "",
+        "id": "search-google;i-want-to-using-feature-search-on-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 678988400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I Open browser",
+            "match": {
+              "location": "StepDef.SearchGoogle.iOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6029400700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open website Google",
+            "match": {
+              "location": "StepDef.SearchGoogle.openWebsiteGoogle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50010200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Located on google website",
+            "match": {
+              "location": "StepDef.SearchGoogle.locatedOnGoogleWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4111406800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search \"Stockbit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Stockbit\"",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDef.SearchGoogle.iSearch(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 352600000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Showing result related with \"Stockbit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Stockbit\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDef.SearchGoogle.showingResultRelatedWith(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search Google",
+    "description": "",
+    "id": "search-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/SearchGoogle.feature",
+    "tags": []
+  }
+]

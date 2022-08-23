@@ -39,8 +39,8 @@ public class SearchGoogle {
 
     @Then("Showing result related with {string}")
     public void showingResultRelatedWith(String result) {
-        driver.findElement(By.xpath("//a[@href='https://stockbit.com']")).isDisplayed();
-        String urlstockbit = driver.findElement(By.xpath("//a[@href='https://stockbit.com']")).getText();
+        driver.findElement(By.tagName("h3")).isDisplayed();
+        String urlstockbit = driver.findElement(By.tagName("h3")).getText();
         System.out.println(urlstockbit);
         driver.close();
         driver.quit();
